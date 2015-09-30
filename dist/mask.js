@@ -19,7 +19,7 @@ angular.module('ui.mask', [])
                 '*': /[a-zA-Z0-9]/
             },
             clearOnBlur: true,
-            eventsToHandle: ['input', 'keypress', 'keyup', 'click', focus']
+            eventsToHandle: ['input', 'keypress', 'keyup', 'click', 'focus']
         })
         .directive('uiMask', ['uiMaskConfig', function(maskConfig) {
                 function isFocused (elem) {
